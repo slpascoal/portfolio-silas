@@ -3,29 +3,35 @@ import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
-  {
+  /*{
     id: 1,
-    title: "React Commerce",
+    title: "SquadIt",
     img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
+    desc: "Usando React e Node.js, esse projeto tem como intuito ser um organizador de equipes. Nele, é possivel cadastrar pessoas e suas respectivas funções. Além disso, usei Photoshop e Canva para criar artes personalizadas para a aplicação.",
+  },*/
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Portfólio Pessoal",
+    img: "/public/projeto-portfolio.png",
+    desc: "Portfólio desenvolvido com base no projeto de Safak e é utilizado para complementar meu currículo dev, incluindo fatos sobre mim e projetos. Foi usado React, Node.js, Javascript, SCSS e HTML para o desenvolvimento",
+    link: "https://portfolio-silas-psi.vercel.app/",
+    botao: "Confira"
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Site 'Zero Brava'",
+    img: "/public/zero-brava.png",
+    desc: "Site ativo e desenvolvido para um podcast sobre cultura e movimentos artísticos de Belo Horizonte e região. O site possui ao todo 4 páginas e a funcionalidade de Blog, onde o cliente possui acesso a um sistema para adicionar posts na plataforma. Aplicação desenvolvida usando Wordpress, Elementor e MySQL.",
+    link: "https://zerobrava.com.br/",
+    botao: "Acesse"
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Braço Mecânico",
+    img: "/public/braco-mecanico.png",
+    desc: "Simulador de Braço Mecânico, desenvolvido em um projeto acadêmico de Computação Gráfica. Nesse simulador foi usado Python e mais algumas bibliotecas como PyGame e PyOpenGL para o desenvolvimento.",
+    link: "https://github.com/slpascoal/Braco-Mecanico",
+    botao: "Ir ao Repositório"
   },
 ];
 
@@ -48,7 +54,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.link} target="_blanck"><button>{item.botao}</button></a>
           </motion.div>
         </div>
       </div>
@@ -72,7 +78,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>Meus Projetos</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

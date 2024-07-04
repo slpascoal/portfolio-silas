@@ -9,7 +9,7 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: orange;
+    color:blueviolet;
     font-size: 36px;
 
     @include mobile {
@@ -95,12 +95,18 @@
         }
 
         button {
-          background-color: orange;
+          background-color: blueviolet;
+          font-weight: bold;
           border: none;
           border-radius: 10px;
           padding: 10px;
           width: 200px;
           cursor: pointer;
+        }
+
+        button:hover{
+          background-color: rgba(137, 43, 226, 0.521);
+          transition: 0.4s;
         }
       }
     }
