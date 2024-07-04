@@ -12,7 +12,7 @@ const items = [
   {
     id: 2,
     title: "Portfólio Pessoal",
-    img: "/public/projeto-portfolio.png",
+    img: "/projeto-portfolio.png",
     desc: "Portfólio desenvolvido com base no projeto de Safak e é utilizado para complementar meu currículo dev, incluindo fatos sobre mim e projetos. Foi usado React, Node.js, Javascript, SCSS e HTML para o desenvolvimento",
     link: "https://portfolio-silas-psi.vercel.app/",
     botao: "Confira"
@@ -20,7 +20,7 @@ const items = [
   {
     id: 3,
     title: "Site 'Zero Brava'",
-    img: "/public/zero-brava.png",
+    img: "/zero-brava.png",
     desc: "Site ativo e desenvolvido para um podcast sobre cultura e movimentos artísticos de Belo Horizonte e região. O site possui ao todo 4 páginas e a funcionalidade de Blog, onde o cliente possui acesso a um sistema para adicionar posts na plataforma. Aplicação desenvolvida usando Wordpress, Elementor e MySQL.",
     link: "https://zerobrava.com.br/",
     botao: "Acesse"
@@ -28,7 +28,7 @@ const items = [
   {
     id: 4,
     title: "Braço Mecânico",
-    img: "/public/braco-mecanico.png",
+    img: "/braco-mecanico.png",
     desc: "Simulador de Braço Mecânico, desenvolvido em um projeto acadêmico de Computação Gráfica. Nesse simulador foi usado Python e mais algumas bibliotecas como PyGame e PyOpenGL para o desenvolvimento.",
     link: "https://github.com/slpascoal/Braco-Mecanico",
     botao: "Ir ao Repositório"
