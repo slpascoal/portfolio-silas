@@ -31,9 +31,7 @@
     overflow: hidden;
     z-index: 999;
 
-    @include mobile {
-      z-index: 999;
-    }
+    
 
     .wrapper {
       max-width: 1366px;
