@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { MdOutlineContentCopy } from "react-icons/md";
+
 
 const variants = {
   initial: {
@@ -46,6 +48,10 @@ const Contact = () => {
       );
   };
 
+  const Copiar = () =>{
+    navigator.clipboard.writeText('slpascoal01@gmail.com');
+  }
+
   return (
     <motion.div
       ref={ref}
@@ -58,7 +64,7 @@ const Contact = () => {
         <motion.h1 variants={variants}>Me chame para uma entrevista!</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>E-mail</h2>
-          <span>slpascoal01@gmail.com</span>
+          <span>slpascoal01@gmail.com <MdOutlineContentCopy className="clicar" onClick={Copiar}/></span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Cidade</h2>

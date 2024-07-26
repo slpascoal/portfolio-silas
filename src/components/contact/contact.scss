@@ -6,11 +6,11 @@
   margin: auto;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
 
   @include mobile {
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px;
     flex-direction: column;
   }
 
@@ -46,7 +46,7 @@
     position: relative;
     
     @include mobile {
-      padding: 50px;
+      padding: 20px;
       width: 100%;
     }
 
@@ -97,4 +97,18 @@
   }
 }
 
+.clicar{
+  transform: scale(1);
+  transition: 0.5s;
+}
 
+.clicar:active{
+  color: rgba(137, 43, 226, 0.521);
+  transition: 0s !important;
+  transform: scale(1.1);
+}
+
+.clicar:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}

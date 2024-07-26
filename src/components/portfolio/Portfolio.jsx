@@ -3,12 +3,14 @@ import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
-  /*{
+  {
     id: 1,
     title: "SquadIt",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Usando React e Node.js, esse projeto tem como intuito ser um organizador de equipes. Nele, é possivel cadastrar pessoas e suas respectivas funções. Além disso, usei Photoshop e Canva para criar artes personalizadas para a aplicação.",
-  },*/
+    img: "/squadit.png",
+    desc: "Usando React, Node e NPM, o projeto SquadIt tem o intuito de ser um organizador de equipes dev. O usuário preenche os dados do colaborador e, dependendo do Time que ele fazer parte, será criado um card em sua respectiva equipe de desenvolvimento!",
+    link: "https://squadit.vercel.app/",
+    botao: "Acesse"
+  },
   {
     id: 2,
     title: "Portfólio Pessoal",
