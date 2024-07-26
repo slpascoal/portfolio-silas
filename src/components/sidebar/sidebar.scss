@@ -17,7 +17,7 @@
     background: white;
 
     @include mobile {
-      width: 200px;
+      z-index: 9999 !important;
     }
 
     .links {
@@ -53,5 +53,9 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    @include mobile {
+      z-index: 9999 !important;
+    }
   }
 }
