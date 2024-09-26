@@ -45,8 +45,8 @@
 
     @include mobile {
       width: 100%;
-      margin-top: -50px;
-      margin-bottom: -100px;
+      margin-top: -70px;
+      margin-bottom: -130px;
     }
 
     .title {
@@ -106,7 +106,7 @@
 
     @include mobile {
       flex-direction: column;
-      width: 100%;
+      width: 90%;
     }
 
     .box {
@@ -122,6 +122,9 @@
 
         @include mobile{
           display: block;
+          font-weight: normal;
+          text-align: center;
+          font-size: 16px;
         }
       }
 

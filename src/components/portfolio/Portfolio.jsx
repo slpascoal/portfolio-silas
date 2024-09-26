@@ -1,25 +1,27 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import idCont from "../../util/idCont";
 
 const items = [
   {
-    id: 1,
-    title: "MyRut",
-    img: "/myrut.png",
-    desc: "Projeto desenvolvido como conclusão do curso 'React: escrevendo com Typescript' da Alura. O usuário deve informar o nome da tarefa e o tempo para ser exeutada. Após isso, será listada a tarefa, que poderá ser executada no temporizador, para contagem regressiva. Foi usado React, Node e NPM para o desenvolvimento.",
-    link: "https://my-rut.vercel.app/",
-    botao: "Acesse"
-  },{
-    id: 2,
-    title: "SquadIt",
-    img: "/squadit.png",
-    desc: "Usando React, Node e NPM, o projeto SquadIt tem o intuito de ser um organizador de equipes dev. O usuário preenche os dados do colaborador e, dependendo do Time que ele fazer parte, será criado um card em sua respectiva equipe de desenvolvimento!",
-    link: "https://squadit.vercel.app/",
-    botao: "Acesse"
+    id: idCont(),
+    title: "Simulador de Empregabilidade",
+    img: "/simulador-empregabilidade.png",
+    desc: "Esta aplicação Full-Stack simula um sistema de recomendação de usuários para cargos de emprego. Permite visualizar uma lista de usuários fictícios e filtrar os resultados com base em habilidades e cargos. Os detalhes dos usuários são exibidos em um modal, e o usuário pode recomendar um perfil via email. Aplicação desenvolvida usando Laravel PHP, Blade e Javascript.",
+    link: "https://github.com/slpascoal/Simulador-Empregabilidade",
+    botao: "Confira"
   },
   {
-    id: 3,
+    id: idCont(),
+    title: "MyBooks",
+    img: "/mybooks.png",
+    desc: "Um site para os amantes dos livros. MyBooks é uma aplicação Full-Stack desenvolvida em React e Node.js que armazena livros lidos pelo usuário. O usuário pode listar livros, favoritar e ver sua estante de livros lidos. Além disso, consegue acompanhar os últimos livros lançados na plataforma.",
+    link: "https://github.com/slpascoal/mybooks",
+    botao: "Confira"
+  },
+  {
+    id: idCont(),
     title: "Portfólio Pessoal",
     img: "/projeto-portfolio.png",
     desc: "Portfólio desenvolvido com base no projeto de Safak e é utilizado para complementar meu currículo dev, incluindo fatos sobre mim e projetos. Foi usado React, Node.js, Javascript, SCSS e HTML para o desenvolvimento",
@@ -27,7 +29,7 @@ const items = [
     botao: "Confira"
   },
   {
-    id: 4,
+    id: idCont(),
     title: "Site 'Zero Brava'",
     img: "/zero-brava.png",
     desc: "Site ativo e desenvolvido para um podcast sobre cultura e movimentos artísticos de Belo Horizonte e região. O site possui ao todo 4 páginas e a funcionalidade de Blog, onde o cliente possui acesso a um sistema para adicionar posts na plataforma. Aplicação desenvolvida usando Wordpress, Elementor e MySQL.",
@@ -35,7 +37,15 @@ const items = [
     botao: "Acesse"
   },
   {
-    id: 5,
+    id: idCont(),
+    title: "SquadIt",
+    img: "/squadit.png",
+    desc: "Usando React, Node e NPM, o projeto SquadIt tem o intuito de ser um organizador de equipes dev. O usuário preenche os dados do colaborador e, dependendo do Time que ele fazer parte, será criado um card em sua respectiva equipe de desenvolvimento!",
+    link: "https://squadit.vercel.app/",
+    botao: "Acesse"
+  },
+  {
+    id: idCont(),
     title: "Braço Mecânico",
     img: "/braco-mecanico.png",
     desc: "Simulador de Braço Mecânico, desenvolvido em um projeto acadêmico de Computação Gráfica. Nesse simulador foi usado Python e mais algumas bibliotecas como PyGame e PyOpenGL para o desenvolvimento.",
