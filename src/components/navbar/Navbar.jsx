@@ -1,6 +1,7 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -17,7 +18,7 @@ const Navbar = () => {
         </motion.span>
         <div className="social">
           <a href="https://github.com/slpascoal" target="_blanck">
-            <img src="/github-11-64.PNG" alt="" />
+          <FaGithub />
           </a>
           <a href="https://www.instagram.com/msi.lp/" target="_blanck">
             <img src="/instagram.png" alt="" />
