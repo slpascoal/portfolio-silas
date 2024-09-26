@@ -8,7 +8,7 @@ const items = [
     id: idCont(),
     title: "Simulador de Empregabilidade",
     img: "/simulador-empregabilidade.png",
-    desc: "Esta aplicação Full-Stack simula um sistema de recomendação de usuários para cargos de emprego. Permite visualizar uma lista de usuários fictícios e filtrar os resultados com base em habilidades e cargos. Os detalhes dos usuários são exibidos em um modal, e o usuário pode recomendar um perfil via email. Aplicação desenvolvida usando Laravel PHP, Blade e Javascript.",
+    desc: "Esta aplicação Full-Stack simula um sistema de recomendação de usuários para cargos de emprego. Os detalhes dos usuários são exibidos em um modal, e o usuário pode recomendar um perfil via email. Aplicação desenvolvida usando Laravel PHP, Blade e Javascript.",
     link: "https://github.com/slpascoal/Simulador-Empregabilidade",
     botao: "Confira"
   },
