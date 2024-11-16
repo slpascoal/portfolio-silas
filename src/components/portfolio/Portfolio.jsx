@@ -6,6 +6,14 @@ import idCont from "../../util/idCont";
 const items = [
   {
     id: idCont(),
+    title: "Travel Manager",
+    img: "/api-travel-manager.png",
+    desc: "Esta API é um gerenciador de pedidos de viagens corporativas, desenvolvida em Laravel, Docker, Laravel Sail, MySQL, PHPUnit, Laravel Sanctum e Swagger. Ela permite que os usuários criem, visualizem, atualizem e excluam pedidos de viagem.",
+    link: "https://github.com/slpascoal/travel-manager",
+    botao: "Confira"
+  },
+  {
+    id: idCont(),
     title: "Simulador de Empregabilidade",
     img: "/simulador-empregabilidade.png",
     desc: "Esta aplicação Full-Stack simula um sistema de recomendação de usuários para cargos de emprego. Os detalhes dos usuários são exibidos em um modal, e o usuário pode recomendar um perfil via email. Aplicação desenvolvida usando Laravel PHP, Blade e Javascript.",

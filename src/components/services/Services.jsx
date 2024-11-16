@@ -16,7 +16,11 @@ import { BsMeta } from "react-icons/bs";
 import { SiGoogleads } from "react-icons/si";
 import { HiMiniAcademicCap } from "react-icons/hi2";
 import { FaPeopleGroup } from "react-icons/fa6";
-
+import { FaLaravel } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { SiSwagger } from "react-icons/si";
+import { MdOutlineWorkOutline } from "react-icons/md";
 
 
 const variants = {
@@ -69,7 +73,7 @@ const Services = () => {
           <h1>
             <motion.b whileHover={{color:"rebeccapurple"}}>sobre</motion.b> mim.
           </h1>
-          <button>CONHECIMENTOS E TRAÇOS</button>
+          <button>Back-End e Front-End</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -78,12 +82,12 @@ const Services = () => {
           whileHover={{ background: "lightgray", color: "black" }}
         >
           <h2>Tecnologias</h2>
-          <h3><FaReact /> <FaNodeJs /> <SiTypescript /> <SiVite /> <DiMongodb /> <RiTailwindCssFill /> <SiStyledcomponents /> <SiExpress /> <FaPhp /> <FaWordpress /></h3>
+          <h3><FaLaravel /> <FaPhp /> <FaDocker /> <SiMysql /> <FaReact /> <FaNodeJs /> <SiTypescript /> <SiSwagger /> <SiVite /> <RiTailwindCssFill />  <FaWordpress /></h3>
           <p>
-            Possuo conhecimento em uma série de tecnologias e linguagens de programação. As principais são: React, Node.js, Typescript, Vite, MongoDB, Tailwind CSS, Styled-Components, Express, PHP, Python e Wordpress.
+            Possuo conhecimento em uma série de tecnologias e linguagens de programação. As principais são: Laravel, PHP, Docker, MySQL, React, Node.js, Typescript, Swagger, Vite, Tailwind CSS e Wordpress.
           </p>
                              
-          <p><FaReact /> <FaNodeJs /> <SiTypescript /> <SiVite /> <DiMongodb /> <RiTailwindCssFill /> <SiStyledcomponents /> <SiExpress /> <FaPhp /> <FaWordpress /></p>
+          <p><FaLaravel /> <FaPhp /> <FaDocker /> <SiMysql /> <FaReact /> <FaNodeJs /> <SiTypescript /> <SiSwagger /> <SiVite /> <RiTailwindCssFill />  <FaWordpress /></p>
            
           
           
@@ -92,26 +96,30 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Formação</h2>
-          <h3>Ensino Superior Completo em Ciências da Computação</h3>
+          <h2>Formações</h2>
+          <h3>
+            Ensino Superior Completo em Ciências da Computação <br />
+            Possuo certificações Front-End e Back-End em plataformas como Alura, Rocketseat e Udemy.
+          </h3>
           <p>
-          Possuo Ensino Superior Completo em Ciências da Computação pelo Centro Universitário Una.
+          Possuo Ensino Superior Completo em Ciências da Computação pelo Centro Universitário Una. <br />
+          Além disso, possuo também certificações Front-End e Back-End em plataformas como Alura, Rocketseat e Udemy.
           </p>
 
-          <p><HiMiniAcademicCap /></p>
+          <p><HiMiniAcademicCap /> <FaBookReader /></p>
           
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Certificações</h2>
-          <h3>Possuo certificações Full-Stack, Front-End e Back-End em plataformas como Alura, Rocketseat e Udemy</h3>
+          <h2>Experiência</h2>
+          <h3>Eu atuo como Desenvolvedor Web Full-Stack autônomo, além de ter experência como Técnico de Suporte. Meus projetos estão focados em otimizar a experiência dos usuários e garantir alta performance e segurança.</h3>
           <p>
-            Mesmo com Ensino Superior Completo, eu sigo estudando e me atualizando dia após dia. Possuo certificações Full-Stack, Front-End e Back-End em plataformas como Alura, Rocketseat e Udemy.
+          Eu atuo como Desenvolvedor Web Full-Stack autônomo, além de ter experência como Técnico de Suporte. Meus projetos estão focados em otimizar a experiência dos usuários e garantir alta performance e segurança.
           </p>
 
-          <p><FaBookReader /></p>
+          <p><MdOutlineWorkOutline /></p>
           
         </motion.div>
         <motion.div
